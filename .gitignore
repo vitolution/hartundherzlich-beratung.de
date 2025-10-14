@@ -1,0 +1,29 @@
+# https://theapache64.github.io/git-do-not-ignore/
+
+/*
+!.gitignore
+!.gitattributes
+
+
+
+!wp-content/
+wp-content/*
+# Theme Exceptions
+!wp-content/themes/
+wp-content/themes/*
+!wp-content/themes/twentytwentyfivechild
+!wp-content/themes/vitolia
+wp-content/themes/vitolia/node_modules/*
+wp-content/themes/vitolia/.parcel-cache
+!wp-content/themes/vitolia-block-theme
+wp-content/themes/vitolia-block-theme/node_modules/*
+wp-content/themes/vitolia-block-theme/.parcel-cache
+!wp-content/themes/kadence-child
+wp-content/themes/kadence-child/node_modules/*
+wp-content/themes/kadence-child/.parcel-cache
+# Plugin Exceptions
+!wp-content/plugins/
+wp-content/plugins/*
+!wp-content/plugins/vitopal
+wp-content/plugins/vitopal/node_modules/*
+wp-content/plugins/vitopal/.parcel-cache
