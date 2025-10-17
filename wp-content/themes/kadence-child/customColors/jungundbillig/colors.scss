@@ -1,0 +1,9 @@
+$scheme-name: "coffee";
+$base-color: #333333;
+$highlight-color: #ffd354;
+$notification-color: #d9ac26;
+$low-contrast-theme: "true";
+
+$form-checked: $base-color;
+
+@import "../_admin.scss";

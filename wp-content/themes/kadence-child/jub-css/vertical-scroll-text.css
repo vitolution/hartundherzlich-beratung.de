@@ -1,0 +1,30 @@
+/*
+Theme Name:     J&B Kadence Child
+Theme URI:      n/a
+Template:       kadence
+Author:         Jung&Billig GmbH
+Author URI:     n/a
+Description:    https://www.jungundbillig.de/
+Version:        1.0.0
+License:        GNU General Public License v3.0 (or later)
+License URI:    https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* Vertical Scroll lange Texte */
+.scroll-text {
+    height: auto!important;
+    max-height: 300px!important;
+    overflow-y: visible !important;
+    overflow-x: hidden!important;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    padding-bottom: 1px;
+    scrollbar-color: var(--global-palette2) var(--global-palette2);
+}
+.scroll-text > *:last-child {
+    margin-bottom: 0; 
+}
+
+.scroll-text-ueber-uns {
+    max-height: 200px;
+}

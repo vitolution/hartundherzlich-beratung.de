@@ -1,0 +1,46 @@
+/*
+Theme Name:     J&B Kadence Child
+Theme URI:      n/a
+Template:       kadence
+Author:         Jung&Billig GmbH
+Author URI:     n/a
+Description:    https://www.jungundbillig.de/
+Version:        1.0.0
+License:        GNU General Public License v3.0 (or later)
+License URI:    https://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/* Scroll Snap */
+.snap-scroll-body {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 100vw;
+    height: 100vh;
+    /* scroll-snap-type: x mandatory;
+    scroll-behavior: smooth; */
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+}
+.snap-scroll-body  .snap-scroll-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    overflow: visible;
+}
+.snap-scroll-body  .snap-scroll-wrapper > .kt-inside-inner-col:first-child {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0;
+    overflow: visible;
+}
+.snap-scroll-section {
+    flex: none;
+    scroll-snap-align: start;
+    width: 100vw; 
+    height: 100vh;
+    overflow: visible!important; 
+}
