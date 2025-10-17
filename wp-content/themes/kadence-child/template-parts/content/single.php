@@ -11,10 +11,10 @@ namespace Kadence;
 * Hook for Hero Section
 */
 do_action( 'kadence_hero_header' );
-?>
+?>single.php
 <div id="primary" class="content-area">
 	<div class="content-container site-container">
-		<div id="main" class="site-main">single.php im child theme
+		<div id="main" class="site-main">
 			<?php
 			/**
 			 * Hook for anything before main content
@@ -32,7 +32,7 @@ do_action( 'kadence_hero_header' );
 						 * Hook in content single entry template.
 						 */
 						do_action( 'kadence_single_content' );
-						echo 'TBD zurück button';
+						
 					}
 				} else {
 					get_template_part( 'template-parts/content/error' );

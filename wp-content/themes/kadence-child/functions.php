@@ -212,3 +212,21 @@ function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
 }
 
 require_once get_stylesheet_directory() . '/inc/title-tags.php';
+
+/**
+ * MARK: Extra CSS
+ * 
+ */
+
+function vitopal_style_init() {
+  $modificated = date( 'YmdHi', filemtime( get_stylesheet_directory_uri() . '/assets/css/main.css' ) );
+
+  wp_register_style( 'main-screen',  get_stylesheet_directory_uri().'/assets/css/main.css', '', $modificated, 'screen' );
+  
+  wp_enqueue_style( 'main-screen' );
+}
+add_action( 'wp_enqueue_scripts', 'vitopal_style_init', 100 );
+
+
+
+
