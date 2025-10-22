@@ -4,3 +4,14 @@ body {
 .heading-news-single {
   font-size: 3rem !important;
 }
+.has-theme-palette-3-color {
+  a {
+    color: var(--wp--preset--color--theme-palette-3) !important;
+    text-decoration: underline !important;
+    &:focus,
+    &:hover {
+      color: var(--global-palette4) !important;
+      text-decoration: none !important;
+    }
+  }
+}
