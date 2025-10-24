@@ -1,9 +1,7 @@
-body {
-  
-}
-.heading-news-single {
-  font-size: 3rem !important;
-}
+/**
+ * MARK: General & Overrides 
+ */
+
 .has-theme-palette-3-color {
   a {
     color: var(--wp--preset--color--theme-palette-3) !important;
@@ -15,3 +13,28 @@ body {
     }
   }
 }
+
+
+/**
+ * MARK: Aktuelles 
+ */
+
+.heading-news-single {
+  font-size: 3rem !important;
+}
+
+.news-blog {
+  .wp-post-image {
+    -webkit-mask-image: url(../img/borders/Rechteck_Startseite.svg);
+    mask-image: url(../img/borders/Rechteck_Startseite.svg);
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: center center;
+    mask-position: center center;
+  }
+}
+
+
+
