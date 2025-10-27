@@ -11,7 +11,7 @@ namespace Kadence;
 * Hook for Hero Section
 */
 do_action( 'kadence_hero_header' );
-?>single.php
+?>
 <div id="primary" class="content-area">
 	<div class="content-container site-container">
 		<div id="main" class="site-main">

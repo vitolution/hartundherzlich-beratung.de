@@ -219,13 +219,30 @@ require_once get_stylesheet_directory() . '/inc/title-tags.php';
  */
 
 function vitopal_style_init() {
-  $modificated = date( 'YmdHi', filemtime( get_stylesheet_directory_uri() . '/assets/css/main.css' ) );
+  $modificated = filemtime( get_stylesheet_directory() . '/assets/css/main.css' );
 
   wp_register_style( 'main-screen',  get_stylesheet_directory_uri().'/assets/css/main.css', '', $modificated, 'screen' );
   
   wp_enqueue_style( 'main-screen' );
 }
 add_action( 'wp_enqueue_scripts', 'vitopal_style_init', 100 );
+
+/**
+ * MARK: Lang var overrides
+ * 
+ */
+
+function my_custom_previous_page_text( $translated_text, $text, $domain ) {
+    if ( 'Previous Post' === $text && 'kadence' === $domain ) {
+        $translated_text = 'Vorherige Meldung'; 
+    }
+    if ( 'Next Post' === $text && 'kadence' === $domain ) {
+        $translated_text = 'Nächste Meldung'; 
+    }
+    return $translated_text;
+}
+add_filter( 'gettext', 'my_custom_previous_page_text', 20, 3 );
+
 
 
 

@@ -16,7 +16,6 @@ if ( is_singular( get_post_type() ) ) {
 	$classes[] = 'title-mobile-align-' . ( kadence()->sub_option( get_post_type() . '_title_align', 'mobile' ) ? kadence()->sub_option( get_post_type() . '_title_align', 'mobile' ) : 'inherit' );
 }
 ?>
-entry_header.php
 <header class="<?php echo esc_attr( implode( ' ', $classes ) ); ?>">
 	<?php
 	do_action( 'kadence_single_before_entry_header' );
@@ -26,7 +25,7 @@ entry_header.php
 	 * Hooked kadence_entry_header 10
 	 */
 	// do_action( 'kadence_entry_header', get_post_type(), 'normal' );
-	echo '<h1 class="entry-title heading-news-single">'.get_the_title().'</h1>';
+	echo '<h1 class="entry-title">'.get_the_title().'</h1>';
 	do_action( 'kadence_single_after_entry_header' );
 	?>
 </header><!-- .entry-header -->

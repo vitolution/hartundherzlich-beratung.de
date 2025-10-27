@@ -8,7 +8,6 @@
 namespace Kadence;
 
 ?>
-entry_content.php
 <div class="<?php echo esc_attr( apply_filters( 'kadence_entry_content_class', 'entry-content single-content' ) ); ?>">
 	<?php
 	do_action( 'kadence_single_before_entry_content' );

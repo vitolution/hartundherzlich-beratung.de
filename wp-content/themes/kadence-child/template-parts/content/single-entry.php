@@ -7,7 +7,7 @@
 
 namespace Kadence;
 
-?>single-entry.php
+?>
 <?php
 if ( kadence()->show_feature_above() ) {
 	get_template_part( 'template-parts/content/entry_thumbnail', get_post_type() );
@@ -54,8 +54,8 @@ if ( is_singular( get_post_type() ) ) {
 			apply_filters(
 				'kadence_post_navigation_args',
 				array(
-					'prev_text' => '<div class="post-navigation-sub"><small>' . kadence()->get_icon( 'arrow-left-alt' ) . esc_html__( 'Previous', 'kadence' ) . '</small></div>%title',
-					'next_text' => '<div class="post-navigation-sub"><small>' . esc_html__( 'Next', 'kadence' ) . kadence()->get_icon( 'arrow-right-alt' ) . '</small></div>%title',
+					'prev_text' => '<div class="post-navigation-sub"><small>' . kadence()->get_icon( 'arrow-left-alt' ) . esc_html__( 'Previous Post', 'kadence' ) . '</small></div>%title',
+					'next_text' => '<div class="post-navigation-sub"><small>' . esc_html__( 'Next Post', 'kadence' ) . kadence()->get_icon( 'arrow-right-alt' ) . '</small></div>%title',
 				)
 			)
 		);
