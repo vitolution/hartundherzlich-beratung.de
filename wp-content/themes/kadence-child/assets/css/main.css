@@ -2,7 +2,7 @@
   --font-size-news-base: 1.125rem;
 }
 /**
- * MARK: General & Overrides 
+ * MARK: Overrides & Fixes
  */
 
 .has-theme-palette-3-color {
@@ -17,6 +17,21 @@
   }
 }
 
+.kb-btns64_1cecc5-78 {
+  gap: 1.25rem 1.5rem;
+}
+
+.wp-block-kadence-slider {
+  .kb-splide .splide__arrows button.splide__arrow {
+    background-color: rgba(255,255,255, .5);
+    opacity: 1 !important;
+    transition: all .25s ease-in-out;
+    &:focus,
+    &:hover {
+      background-color: rgba(255,255,255, .85);
+    }
+  }
+}
 
 /**
  * MARK: Aktuelles 
@@ -64,7 +79,6 @@ h1:has(+ .news-blog) {
 }
 
 .news-blog {
-  
   .is-layout-grid.columns-3 {
     gap: 2rem;
   }
@@ -94,6 +108,7 @@ h1:has(+ .news-blog) {
   .wp-block-post-title {
     color: var(--global-palette2);
     font-size: calc(var(--font-size-news-base) * 1.5) !important;
+    hyphens: auto;
     margin-block: var(--font-size-news-base) !important;
   }
   .wp-block-post-excerpt {
@@ -123,6 +138,7 @@ h1:has(+ .news-blog) {
   height: auto !important;
   padding: 0 !important;
   aspect-ratio: 16 / 9;
+  margin-block-start: 1.5rem;
   -webkit-mask-image: url(../img/borders/border-news-image-hero-16-9.svg);
   mask-image: url(../img/borders/border-news-image-hero-16-9.svg);
   -webkit-mask-size: contain;
@@ -133,18 +149,6 @@ h1:has(+ .news-blog) {
   mask-position: center center;
 }
 
-.article-post-thumbnail {
-  /* aspect-ratio: 1054 / 529;
-  -webkit-mask-image: url(../img/borders/border-news-image-hero.svg);
-  mask-image: url(../img/borders/border-news-image-hero.svg);
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-position: center center;
-  mask-position: center center; */
-}
-
 .category-aktuelles {
   border-radius: 1px !important;
   .entry-content-wrap {
@@ -153,6 +157,7 @@ h1:has(+ .news-blog) {
   .entry-title {
     color: var(--global-palette2);
     font-size: calc(var(--font-size-news-base) * 1.5) !important;
+    hyphens: auto;
   }
   .entry-content {
     font-size: var(--font-size-news-base) !important;
@@ -206,9 +211,6 @@ h1:has(+ .news-blog) {
   :root {
     --font-size-news-base: 1.25rem;
   }
-  h1:has(+ .news-blog) {
-    
-  }
   .news-blog {
     .is-layout-grid.columns-3 {
       gap: 3.5rem 2.5rem;
@@ -228,7 +230,7 @@ h1:has(+ .news-blog) {
   }
   .category-aktuelles {
     .entry-title {
-      font-size: calc(var(--font-size-news-base) * 3) !important;
+      font-size: calc(var(--font-size-news-base) * 2.25) !important;
     }
   }
 }
