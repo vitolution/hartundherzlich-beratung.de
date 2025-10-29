@@ -38,12 +38,12 @@
  */
 
 a.news-blog-link {
-  background: var(--global-palette1);
-  color: var(--global-palette2);
+  background: var(--global-palette1) !important;
+  color: var(--global-palette2) !important;
   &:focus,
   &:hover {
-    background: var(--global-palette2);
-    color: var(--global-palette1);
+    background: var(--global-palette2) !important;
+    color: var(--global-palette1) !important;
   }
 }
 
