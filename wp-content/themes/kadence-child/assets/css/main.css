@@ -49,6 +49,7 @@ a.news-blog-link {
 
 h1:has(+ .news-blog) {
   background: var(--global-palette1);
+  color: var(--global-palette2);
   font-size: calc(var(--font-size-news-base) * 1.5) !important;
   margin-inline: auto !important;
   mask-image: url(../img/borders/border-landscape-lime.svg);
