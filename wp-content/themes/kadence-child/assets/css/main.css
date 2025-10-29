@@ -57,6 +57,12 @@ h1:has(+ .news-blog) {
   padding: .5em .5em;
 }
 
+.blog-heading-container {
+  background: url(../img/borders/border-landscape-lime.svg) 100% 50% no-repeat;
+  background-size: cover;
+  padding: 3rem 5rem 3rem 2rem;
+}
+
 .news-blog,
 .category-aktuelles {
   .wp-block-post-excerpt__more-link,
