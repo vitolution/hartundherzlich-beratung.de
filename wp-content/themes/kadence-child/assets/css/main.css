@@ -68,7 +68,7 @@ a.news-blog-link {
   background-position: 0 50%;
   box-sizing: border-box;
   margin-block-end: .5rem;
-  padding: 2rem;
+  padding: 2rem 0 2rem 1.5rem;
   width: 100%;
   .blog-heading {
     font-size: clamp(0.49em, 6.8vw, 9vw);
@@ -224,6 +224,7 @@ a.news-blog-link {
 @media(min-width: 600px) {
   .blog-heading-container {
     margin-block-end: 1.5rem;
+    padding-inline-start: 3rem;
   }
   .news-blog {
     .is-layout-grid.columns-3 {
@@ -241,6 +242,9 @@ a.news-blog-link {
 @media(min-width: 1200px) {
   :root {
     --font-size-news-base: 1.25rem;
+  }
+  .kb-row-layout-wrap .kt-row-column-wrap:has(.news-blog) {
+    padding-block-start: 6.5rem;
   }
   .blog-heading-container {
     margin-block-end: 2rem;
