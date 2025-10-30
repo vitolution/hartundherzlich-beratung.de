@@ -121,7 +121,7 @@ a.news-blog-link {
   padding: 2rem 0 2rem 1.5rem;
   width: 100%;
   .blog-heading {
-    font-size: clamp(0.49em, 6.8vw, 9vw);
+    font-size: clamp(0.49em, 6.8vw, 120px);
     span {
       display: block;
       &:last-child {
