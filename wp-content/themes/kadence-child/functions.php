@@ -228,6 +228,16 @@ function vitopal_style_init() {
 add_action( 'wp_enqueue_scripts', 'vitopal_style_init', 100 );
 
 /**
+ * MARK: Admin CSS
+ * 
+ */
+function add_editor_styles() {
+  add_theme_support( 'editor-styles' );
+    add_editor_style( 'editor-styles.css' );
+}
+add_action( 'admin_init', 'add_editor_styles' );
+
+/**
  * MARK: Lang var overrides
  * 
  */
