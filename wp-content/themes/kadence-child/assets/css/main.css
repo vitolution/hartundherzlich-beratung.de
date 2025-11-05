@@ -271,8 +271,7 @@ a.news-blog-link {
 
 @media(min-width: 480px) {
   .button-start-blog-container {
-    right: 20px;
-    top: 80px;
+    
   }
   .blog-heading-container {
     margin-block-end: 1rem;
@@ -282,6 +281,9 @@ a.news-blog-link {
 @media(min-width: 600px) {
   .button-start-blog-container {
     font-size: 1.25rem;
+    left: 50%;
+    right: auto;
+    top: 80px;
     width: 100px;
   }
   .blog-heading-container {
