@@ -1,5 +1,6 @@
 :root {
   --font-size-news-base: 1.125rem;
+  --global-palette3-alpha: rgba(240, 235, 241, .85);
 }
 /**
  * MARK: Overrides & Fixes
@@ -45,13 +46,13 @@
   font-size: 1rem;
   height: auto;
   position: absolute;
-  right: 100px;
-  top: 10px;
-  width: 80px;
+  right: 20px;
+  top: 75px;
+  width: 60px;
   z-index: 10;
   a {
     align-items: center;
-    background-color: var(--global-palette3);
+    background-color: var(--global-palette3-alpha);
     /* background-color: var(--global-palette1); */
     /* background-color: red; */
     border-radius: 100%;
@@ -273,6 +274,10 @@ a.news-blog-link {
   .button-start-blog-container {
     right: 20px;
     top: 100px;
+    width: 80px;
+    a {
+      background-color: var(--global-palette3);
+    }
   }
   .blog-heading-container {
     margin-block-end: 1rem;
