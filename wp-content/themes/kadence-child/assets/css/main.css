@@ -256,11 +256,16 @@ a.news-blog-link {
   }
   .entry-content {
     font-size: var(--font-size-news-base) !important;
+    h2,
+    h3,
+    .wp-block-kadence-advancedheading,
     .wp-block-heading {
       color: var(--global-palette2);
       font-size: var(--font-size-news-base) !important;
       margin-block:  calc(var(--font-size-news-base) * 2) var(--font-size-news-base) !important;
     }
+    h2,
+    h2.wp-block-kadence-advancedheading,
     h2.wp-block-heading {
       font-size: calc(var(--font-size-news-base) * 1.25) !important;
     }
@@ -318,6 +323,8 @@ a.news-blog-link {
       font-size: calc(var(--font-size-news-base) * 2) !important;
     }
     .entry-content {
+      h2,
+      h2.wp-block-kadence-advancedheading,
       h2.wp-block-heading {
         font-size: calc(var(--font-size-news-base) * 1.375) !important;
       }
@@ -382,6 +389,8 @@ a.news-blog-link {
       font-size: calc(var(--font-size-news-base) * 2.25) !important;
     }
     .entry-content {
+      h2,
+      h2.wp-block-kadence-advancedheading,
       h2.wp-block-heading {
         font-size: calc(var(--font-size-news-base) * 1.5) !important;
       }
