@@ -9,7 +9,7 @@ namespace Kadence;
 
 ?>
 <footer class="entry-footer">
-	<p><a href="/aktuelles">Zurück</a></p> 
+	<p><a href="/blog">Zurück</a></p> 
 	<?php
 	if ( 'post' === get_post_type() && kadence()->option( 'post_tags' ) ) {
 		get_template_part( 'template-parts/content/entry_tags', get_post_type() );

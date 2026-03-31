@@ -133,7 +133,8 @@ a.news-blog-link {
 }
 
 .news-blog,
-.category-aktuelles {
+.category-aktuelles,
+.category-blog {
   .wp-block-post-excerpt__more-link,
   .entry-footer a {
     background: var(--global-palette-btn-bg);
@@ -222,7 +223,8 @@ a.news-blog-link {
   }
 }
 
-.kadence-thumbnail-position-behind:has(+ .category-aktuelles) {
+.kadence-thumbnail-position-behind:has(+ .category-aktuelles),
+.kadence-thumbnail-position-behind:has(+ .category-blog) {
   margin-bottom: 1rem;
 }
 
@@ -241,7 +243,8 @@ a.news-blog-link {
   mask-position: center center;
 }
 
-.category-aktuelles {
+.category-aktuelles,
+.category-blog {
   border-radius: 1px !important;
   .entry-content-wrap {
     padding-block-start: calc(var(--font-size-news-base) * 1.25);
@@ -257,6 +260,9 @@ a.news-blog-link {
       color: var(--global-palette2);
       font-size: var(--font-size-news-base) !important;
       margin-block:  calc(var(--font-size-news-base) * 2) var(--font-size-news-base) !important;
+    }
+    h2.wp-block-heading {
+      font-size: calc(var(--font-size-news-base) * 1.25) !important;
     }
     p {
       font-size: var(--font-size-news-base) !important;
@@ -306,9 +312,15 @@ a.news-blog-link {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
-  .category-aktuelles {
+  .category-aktuelles,
+  .category-blog {
     .entry-title {
       font-size: calc(var(--font-size-news-base) * 2) !important;
+    }
+    .entry-content {
+      h2.wp-block-heading {
+        font-size: calc(var(--font-size-news-base) * 1.375) !important;
+      }
     }
   }
 }
@@ -318,7 +330,8 @@ a.news-blog-link {
     font-size: 1.5rem;
     width: 130px;
   }
-  .kadence-thumbnail-position-behind:has(+ .category-aktuelles) {
+  .kadence-thumbnail-position-behind:has(+ .category-aktuelles),
+  .kadence-thumbnail-position-behind:has(+ .category-blog) {
     margin-bottom: -4.3em;
   }
 }
@@ -363,9 +376,15 @@ a.news-blog-link {
       gap: 4rem 3.5rem;
     }
   }
-  .category-aktuelles {
+  .category-aktuelles,
+  .category-blog {
     .entry-title {
       font-size: calc(var(--font-size-news-base) * 2.25) !important;
+    }
+    .entry-content {
+      h2.wp-block-heading {
+        font-size: calc(var(--font-size-news-base) * 1.5) !important;
+      }
     }
   }
 }
