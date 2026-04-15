@@ -163,7 +163,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
   <?php
 }
-add_action('wp_body_open', 'add_gtm_body');
+// add_action('wp_body_open', 'add_gtm_body');
 
 
 function disable_emojis() {
