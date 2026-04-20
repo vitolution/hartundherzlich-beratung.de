@@ -408,5 +408,14 @@ a.news-blog-link {
   }
 }
 
+/* 
+MARK: complianz
+*/
+
+.cmplz-cookiebanner {
+  .cmplz-links li:has(.cookie-statement) {
+    display: none;
+  }
+}
 
 
