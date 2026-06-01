@@ -1,26 +1,35 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Scrollbaren Container auswählen
+    const scrollContainer = document.querySelector('.snap-scroll-body');
+    if (!scrollContainer) {
+        console.error('Scrollbarer Container nicht gefunden.');
+        return;
+    }
 
-  
     // Alle Slides mit der Klasse snap-scroll-section auswählen
     const slides = document.querySelectorAll('.snap-scroll-section');
+    console.log('Slides:', slides);
 
     // Intersection Observer erstellen
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                // ID des aktuellen Slides abrufen
                 const slideId = entry.target.id;
-                if (slideId) {
-                    // URL ohne Anker setzen
-                    window.history.replaceState({}, '', window.location.pathname);
-                    // Neuen Anker zur URL hinzufügen
+                console.log('Sichtbarer Slide:', slideId);
+
+                // URL ohne Anker zurücksetzen
+                window.history.replaceState({}, '', window.location.pathname);
+
+                // Nur Anker setzen, wenn slideId nicht "start" ist
+                if (slideId && slideId !== 'start') {
                     window.history.replaceState({}, '', `#${slideId}`);
                 }
             }
         });
     }, {
-        threshold: 0.5, // 50% des Slides müssen sichtbar sein, um als "aktiv" zu gelten
-        rootMargin: '-50% 0px -50% 0px' // Optional: Anpassung der Erkennungszone
+        root: scrollContainer,
+        threshold: 0.5,
+        rootMargin: '0px'
     });
 
     // Alle Slides beobachten

@@ -291,6 +291,17 @@ function vitopal_scripts_init() {
   wp_register_script( 'main-script', get_stylesheet_directory_uri() . '/assets/js/main.js', array(), $modificated_main_script, true );
 
   wp_register_script( 'brevo-script', get_stylesheet_directory_uri() . '/assets/js/brevo.js', array(), $modificated_main_script, true );
+
+  wp_register_script( 
+    'brevo-sibforms', 
+    'https://sibforms.com/forms/end-form/build/main.js', 
+    array(), 
+    '', 
+    array( 
+      'strategy'  => 'defer',
+      'in_footer' => true, 
+    ) 
+  );
   
   wp_enqueue_script( 'main-script' );
   if ( 
@@ -298,6 +309,7 @@ function vitopal_scripts_init() {
   ) 
   {
     wp_enqueue_script( 'brevo-script' );
+    wp_enqueue_script( 'brevo-sibforms' );
   }
 }
 add_action( 'wp_enqueue_scripts', 'vitopal_scripts_init', 100 );
@@ -311,8 +323,18 @@ function vitopal_style_init() {
   $modificated = filemtime( get_stylesheet_directory() . '/assets/css/main.css' );
 
   wp_register_style( 'main-screen',  get_stylesheet_directory_uri().'/assets/css/main.css', '', $modificated, 'screen' );
+
+  wp_register_style( 'brevo',  get_stylesheet_directory_uri().'/assets/css/brevo.css', '', $modificated, 'screen' );
+  wp_register_style( 'brevo-sibforms', 'https://sibforms.com/forms/end-form/build/sib-styles.css', '', '', 'screen' );
   
   wp_enqueue_style( 'main-screen' );
+  if ( 
+    is_page('kontakt')
+  ) 
+  {
+    wp_enqueue_style( 'brevo' );
+    wp_enqueue_style( 'brevo-sibforms' );
+  }
 }
 add_action( 'wp_enqueue_scripts', 'vitopal_style_init', 100 );
 
