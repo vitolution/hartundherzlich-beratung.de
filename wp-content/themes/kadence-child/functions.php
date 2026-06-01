@@ -281,6 +281,28 @@ function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
 require_once get_stylesheet_directory() . '/inc/title-tags.php';
 
 /**
+ * MARK: Extra JS
+ * 
+ */
+
+function vitopal_scripts_init() {
+  $modificated_main_script = filemtime( get_stylesheet_directory() . '/assets/js/main.js' );
+
+  wp_register_script( 'main-script', get_stylesheet_directory_uri() . '/assets/js/main.js', array(), $modificated_main_script, true );
+
+  wp_register_script( 'brevo-script', get_stylesheet_directory_uri() . '/assets/js/brevo.js', array(), $modificated_main_script, true );
+  
+  wp_enqueue_script( 'main-script' );
+  if ( 
+    is_page('kontakt')
+  ) 
+  {
+    wp_enqueue_script( 'brevo-script' );
+  }
+}
+add_action( 'wp_enqueue_scripts', 'vitopal_scripts_init', 100 );
+
+/**
  * MARK: Extra CSS
  * 
  */
