@@ -434,15 +434,17 @@ MARK: Contact
   background-image: none;
 }
 
-.site-main .wp-block-kadence-advanced-form2189-cpt-id .kb-advanced-form textarea {
-  border: 2px solid var(--global-palette1, #3182CE);
-}
-
 .site-main .kontaktseite-box > .kt-inside-inner-col {
   background-size: 100% 100%;
   background-position: center;
   min-height: 100%;
   width: 100%;
+}
+
+/* Kadence Form */
+
+.site-main .wp-block-kadence-advanced-form2189-cpt-id .kb-advanced-form textarea {
+  border: 2px solid var(--global-palette1, #3182CE);
 }
 
 .site-main .kontaktseite-box .kt-inside-inner-col .wp-block-kadence-advanced-form {
@@ -453,7 +455,11 @@ MARK: Contact
   width: 100%;
 }
 
-/* Brevo */
+.kb-adv-form-error-link {
+  color: #bd0000 !important;
+}
+
+/* Brevo Form */
 .sib-form {
   background-attachment: scroll !important;
   background-position: 0 0;
