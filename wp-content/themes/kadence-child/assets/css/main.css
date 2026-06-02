@@ -487,6 +487,11 @@ MARK: Contact
       transform-origin: center;
     }
   }
+  & .entry__error {
+    color: rgb(255, 73, 73) !important;
+    border-radius: 0 !important;
+    padding: 1rem;
+  }
 }
 #sib-container {
   background-color: transparent !important;
