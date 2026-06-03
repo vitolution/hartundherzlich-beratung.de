@@ -459,7 +459,9 @@ MARK: Contact
   color: #bd0000 !important;
 }
 
-/* Brevo Form */
+/* 
+MARK: newsletter / Brevo 
+*/
 .sib-form {
   background-attachment: scroll !important;
   background-position: 0 0;
@@ -493,6 +495,9 @@ MARK: Contact
       transform-origin: center;
     }
   }
+  & .kb-adv-form-message {
+    margin-block-start: 3rem;
+  }
   & .entry__error {
     color: rgb(255, 73, 73) !important;
     border-radius: 0 !important;
@@ -504,6 +509,10 @@ MARK: Contact
   border: none !important;
 }
 
+.site-main .kontaktseite-box > .kt-inside-inner-col {
+  padding: 2rem 1rem;
+}
+
 @media (max-width: 767px) {
   .site-main .kontaktseite-box > .kt-inside-inner-col {
     padding: 2rem 1rem;
@@ -513,11 +522,17 @@ MARK: Contact
   }
 }
 
-/* 
-MARK: newsletter
-*/
+@media (max-width: 1024px) {
+  .site-main .kontaktseite-box > .kt-inside-inner-col {
+    padding: 3rem 2rem;
+  }
+}
 
-
+@media (min-width: 1024px) {
+  .site-main .kontaktseite-box > .kt-inside-inner-col {
+    padding: 4rem 3rem;
+  }
+}
 
 
 /* 
