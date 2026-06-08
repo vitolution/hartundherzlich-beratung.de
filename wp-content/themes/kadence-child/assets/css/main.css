@@ -441,6 +441,34 @@ MARK: Contact
   width: 100%;
 }
 
+@media screen and (max-width:1400px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    font-size: 4vw!important;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width:320px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    font-size: 6.5vw!important;
+  }
+}
+
+@media screen and (max-width:375px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    font-size: 6vw!important;
+  }  
+}
+
+@media screen and (max-width:400px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    padding-top: 10px!important;
+  }
+}
+
 /* Kadence Form */
 
 .site-main .wp-block-kadence-advanced-form2189-cpt-id .kb-advanced-form textarea {
