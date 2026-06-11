@@ -441,20 +441,6 @@ MARK: Contact
   width: 100%;
 }
 
-@media screen and (max-width:1400px){  
-  h2.kontakt-headline,
-  h2.newsletter-headline {
-    font-size: 4vw!important;
-  }
-}
-
-@media screen and (max-width:767px) and (min-width:320px){  
-  h2.kontakt-headline,
-  h2.newsletter-headline {
-    font-size: 6.5vw!important;
-  }
-}
-
 @media screen and (max-width:375px){  
   h2.kontakt-headline,
   h2.newsletter-headline {
@@ -468,6 +454,46 @@ MARK: Contact
     padding-top: 10px!important;
   }
 }
+
+@media (max-width: 415px) {
+  #main .extrapadding > .kt-row-column-wrap:has(.newsletter-headline) {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width:767px) and (min-width:320px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    font-size: 6.5vw!important;
+  }
+}
+
+@media screen and (max-width:1400px){  
+  h2.kontakt-headline,
+  h2.newsletter-headline {
+    font-size: 4vw!important;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .extrapadding:has(
+    .newsletter-headline, 
+    .kontakt-headline
+  ) {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 2200px) {
+  .extrapadding:has(
+    .newsletter-headline, 
+    .kontakt-headline
+  ) {
+    padding-bottom: 20px;
+  }
+}
+
+
 
 /* Kadence Form */
 
