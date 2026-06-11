@@ -535,6 +535,10 @@ MARK: Contact
   color: #bd0000 !important;
 }
 
+#ds-text {
+  color: #fff;
+}
+
 /* 
 MARK: newsletter / Brevo 
 */
