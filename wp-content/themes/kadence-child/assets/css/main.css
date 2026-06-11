@@ -422,6 +422,22 @@ a.news-blog-link {
 MARK: Contact
 */
 
+.page-id-7657 {
+  & .entry-content {
+    & a {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+.site-main .kontakt-text a {
+  color: var(--global-palette4, #2D3748);
+  &:focus,
+  &:hover {
+    color: var(--global-palette2, #2B6CB0);
+  }
+}
+
 :root .page-id-7657 .has-theme-palette-9-background-color, 
 :root .page-id-7657 .has-theme-palette9-background-color {
   background-color: #f0ebf1;
@@ -465,6 +481,12 @@ MARK: Contact
   h2.kontakt-headline,
   h2.newsletter-headline {
     font-size: 6.5vw!important;
+  }
+}
+
+@media (max-width: 767px) {
+  #main .wp-block-kadence-column > .kt-inside-inner-col {
+    padding-left: 0;
   }
 }
 
@@ -558,6 +580,12 @@ MARK: newsletter / Brevo
     padding: 1rem;
   }
 }
+
+.sib-form,
+.sib-form * {
+  font-family: var(--global-body-font-family) !important;
+}
+
 #sib-container {
   background-color: transparent !important;
   border: none !important;
