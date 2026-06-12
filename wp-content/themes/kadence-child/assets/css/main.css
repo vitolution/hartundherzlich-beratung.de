@@ -44,6 +44,20 @@
   }
 }
 
+.wp-block-kadence-advancedgallery {
+  &.logo-slider {
+    & .splide__pagination {
+      display: none;
+    }
+    & .kb-slide-item {
+      padding-inline: 4rem;
+      & img {
+        object-fit: contain !important;
+      }
+    }
+  }
+}
+
 /**
  * MARK: Aktuelles 
  */
