@@ -543,6 +543,9 @@ MARK: Contact
     width: 100%;
     & .kb-advanced-form {
       padding: 4rem 2rem;
+      & .wp-block-kadence-advancedheading {
+        color: white !important;
+      }
     }
   }
 }
