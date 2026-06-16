@@ -50,10 +50,15 @@
       display: none;
     }
     & .kb-slide-item {
-      padding-inline: 4rem;
       & img {
         object-fit: contain !important;
       }
+    }
+    & .splide__arrow--prev {
+      left: -50px;
+    }
+    & .splide__arrow--next {
+      right: -50px;
     }
   }
 }
