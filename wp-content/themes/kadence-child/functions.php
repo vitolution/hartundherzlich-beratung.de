@@ -309,7 +309,7 @@ function vitopal_scripts_init() {
     array(), 
     '', 
     array( 
-      'strategy'  => 'defer async',
+      'strategy'  => 'defer',
       'in_footer' => true, 
     ) 
   );
