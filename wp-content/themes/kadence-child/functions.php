@@ -302,6 +302,17 @@ function vitopal_scripts_init() {
       'in_footer' => true, 
     ) 
   );
+
+  wp_register_script( 
+    'brevo-turnstile', 
+    'https://challenges.cloudflare.com/turnstile/v0/api.js', 
+    array(), 
+    '', 
+    array( 
+      'strategy'  => 'defer async',
+      'in_footer' => true, 
+    ) 
+  );
   
   wp_enqueue_script( 'main-script' );
   if ( 
@@ -310,6 +321,7 @@ function vitopal_scripts_init() {
   {
     wp_enqueue_script( 'brevo-script' );
     wp_enqueue_script( 'brevo-sibforms' );
+    wp_enqueue_script( 'brevo-turnstile' );
   }
 }
 add_action( 'wp_enqueue_scripts', 'vitopal_scripts_init', 100 );
