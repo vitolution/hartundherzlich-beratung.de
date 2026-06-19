@@ -1,5 +1,6 @@
 :root {
   --font-size-news-base: 1.125rem;
+  --font-size-in-tab: 2rem;
   --global-palette3-alpha: rgba(240, 235, 241, .85);
   --background-frayed-edges-padding-inline: 2rem;
   @media (min-width: 800px) {
@@ -51,6 +52,7 @@
     }
     & .kb-slide-item {
       & img {
+        max-height: 100px !important;
         object-fit: contain !important;
       }
     }
@@ -302,6 +304,22 @@ a.news-blog-link {
       font-size: var(--font-size-news-base) !important;
       margin-block-end: var(--font-size-news-base);
     }
+    & .wp-block-kadence-tab .wp-block-cover__inner-container :is(
+      h2,
+      h3,
+      .wp-block-kadence-advancedheading,
+      .wp-block-heading ,
+      p
+    ) {
+      color: white !important;
+    }
+    & .wp-block-kadence-tab .wp-block-cover__inner-container :is(
+      h2,
+      h3,
+      h4
+    ) {
+      font-size: calc(var(--font-size-in-tab) * 1) !important;
+    }
   }
   .entry-footer {
     margin-block-start: 2rem;
@@ -357,6 +375,13 @@ a.news-blog-link {
       h2.wp-block-heading {
         font-size: calc(var(--font-size-news-base) * 1.375) !important;
       }
+      & .wp-block-kadence-tab .wp-block-cover__inner-container :is(
+        h2,
+        h3,
+        h4
+      ) {
+        font-size: calc(var(--font-size-in-tab) * 1.5) !important;
+      }
     }
   }
 }
@@ -369,6 +394,18 @@ a.news-blog-link {
   .kadence-thumbnail-position-behind:has(+ .category-aktuelles),
   .kadence-thumbnail-position-behind:has(+ .category-blog) {
     margin-bottom: -4.3em;
+  }
+  .category-aktuelles,
+  .category-blog {
+    .entry-content {
+      & .wp-block-kadence-tab .wp-block-cover__inner-container :is(
+        h2,
+        h3,
+        h4
+      ) {
+        font-size: calc(var(--font-size-in-tab) * 1.75) !important;
+      }
+    }
   }
 }
 
@@ -543,6 +580,7 @@ MARK: Contact
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    color: white !important;
     max-width: 640px;
     margin: auto;
     width: 100%;
@@ -550,6 +588,18 @@ MARK: Contact
       padding: 4rem 2rem;
       & .wp-block-kadence-advancedheading {
         color: white !important;
+      }
+      & a[data-type="page"] {
+        color: var(--global-palette1, #3182CE) !important;
+        text-decoration: underline !important;
+        &:hover,
+        &:focus {
+          color: white !important;
+          text-decoration: none !important;
+        }
+      }
+      & #ds-text {
+        font-size: 12px !important;
       }
     }
   }
