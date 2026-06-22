@@ -611,7 +611,7 @@ MARK: Contact
 
 .site-main .wp-block-kadence-advanced-form2189-cpt-id .kb-advanced-form textarea,
 .single-post .wp-block-kadence-advanced-form textarea {
-  border: 2px solid var(--global-palette1, #3182CE);
+  border: 2px solid var(--global-palette1, #d9ff57);
 }
 
 .site-main .kontaktseite-box .kt-inside-inner-col .wp-block-kadence-advanced-form {
@@ -627,7 +627,18 @@ MARK: Contact
 }
 
 #ds-text {
-  color: #fff;
+  color: #fff !important;
+  & a {
+    color: #fff !important;
+    &:focus,
+    &:hover {
+      color: var(--global-palette1, #d9ff57) !important;
+    }
+  }
+}
+
+iframe{
+  max-width: 100%;
 }
 
 /* 
@@ -679,6 +690,12 @@ MARK: newsletter / Brevo
 .sib-form,
 .sib-form * {
   font-family: var(--global-body-font-family) !important;
+}
+
+#sib-form div:first-child .sib-form-block p:first-child {
+  font-family: 'Campton Bold', sans-serif !important;
+  font-size: 28px;
+  text-transform: uppercase;
 }
 
 #sib-container {

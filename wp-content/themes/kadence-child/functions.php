@@ -316,7 +316,8 @@ function vitopal_scripts_init() {
   
   wp_enqueue_script( 'main-script' );
   if ( 
-    is_page('kontakt')
+    is_page('kontakt') ||
+    is_page('kontakt-neu')
   ) 
   {
     wp_enqueue_script( 'brevo-script' );
@@ -341,7 +342,8 @@ function vitopal_style_init() {
   
   wp_enqueue_style( 'main-screen' );
   if ( 
-    is_page('kontakt')
+    is_page('kontakt') ||
+    is_page('kontakt-neu')
   ) 
   {
     wp_enqueue_style( 'brevo' );
