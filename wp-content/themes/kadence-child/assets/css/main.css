@@ -478,8 +478,8 @@ a.news-blog-link {
 MARK: Contact
 */
 
-.page-id-7657 {
-  & .entry-content {
+.entry-content {
+  & .page-contact {
     & a {
       text-decoration: underline !important;
     }
@@ -494,8 +494,8 @@ MARK: Contact
   }
 }
 
-:root .page-id-7657 .has-theme-palette-9-background-color, 
-:root .page-id-7657 .has-theme-palette9-background-color {
+:root .page-type-vertical.has-theme-palette-9-background-color, 
+:root .page-type-vertical.has-theme-palette9-background-color  {
   background-color: #f0ebf1;
 }
 
