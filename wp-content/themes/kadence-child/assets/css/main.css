@@ -475,6 +475,15 @@ a.news-blog-link {
 }
 
 /*
+MARK: Page vertical
+*/
+
+:root .page-type-vertical.has-theme-palette-9-background-color, 
+:root .page-type-vertical.has-theme-palette9-background-color  {
+  background-color: #f0ebf1;
+}
+
+/*
 MARK: Contact
 */
 
@@ -492,11 +501,6 @@ MARK: Contact
   &:hover {
     color: var(--global-palette2, #2B6CB0);
   }
-}
-
-:root .page-type-vertical.has-theme-palette-9-background-color, 
-:root .page-type-vertical.has-theme-palette9-background-color  {
-  background-color: #f0ebf1;
 }
 
 .site-main .kb-row-layout-id7657_00c1a5-8d,
