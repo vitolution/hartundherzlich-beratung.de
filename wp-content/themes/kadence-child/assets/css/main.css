@@ -586,7 +586,6 @@ MARK: Contact
     color: white !important;
     max-width: 640px;
     margin: auto;
-    padding-block-end: 2rem;
     width: 100%;
     & .kb-advanced-form {
       padding: 4rem 2rem;
@@ -637,9 +636,11 @@ MARK: Contact
   }
 }
 
-.page-contact .kb-adv-form-success {
+.page-contact .kb-adv-form-success,
+.single-post .wp-block-kadence-advanced-form .kb-adv-form-success {
   color: white !important;
   font-size: 16px !important;
+  padding: 0 2rem 3rem;
 }
 
 @media (max-width: 767px) {
