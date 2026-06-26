@@ -586,6 +586,7 @@ MARK: Contact
     color: white !important;
     max-width: 640px;
     margin: auto;
+    padding-block-end: 2rem;
     width: 100%;
     & .kb-advanced-form {
       padding: 4rem 2rem;
